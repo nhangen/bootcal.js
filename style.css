@@ -1,0 +1,9 @@
+#schedule tbody td {
+  line-height: 100px;
+	min-width: 100px;
+}
+
+#schedule tbody td .number-day {
+	line-height: 1;
+	vertical-align: top;
+}
