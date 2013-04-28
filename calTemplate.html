@@ -1,16 +1,10 @@
-<div class="container-fluid">
-  <div class="span5"></div>
-	<div class="span2">
-		<h3 id="month" class="text-center">Month</h3>
+<div class="container">
+	<h3 id="month" class="pull-left">Month</h3>
+	<div id="cal-nav" class="btn-group pull-right">
+		<button id="last" class="btn"><i class="icon-chevron-left"></i> </button>
+		<button id="today" class="btn">Today</button>
+		<button id="next" class="btn"><i class="icon-chevron-right"></i> </button>
 	</div>
-	<div class="span5">
-		<div class="btn-group">
-			<button id="last" class="btn"><i class="icon-chevron-left"></i> </button>
-			<button id="today" class="btn">Today</button>
-			<button id="next" class="btn"><i class="icon-chevron-right"></i> </button>
-		</div>
-	</div>
-</div>
 	<table id="schedule" class="table table-bordered table-striped table-hover">
 		<thead>
 			<tr>
@@ -26,156 +20,123 @@
 		<tbody>
 			<tr>
 				<td>
-					<strong class="number-day">1</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">2</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">3</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">4</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">5</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">6</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">7</strong>
 					<p></p>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<strong class="number-day">8</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">9</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">10</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">11</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">12</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">13</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">14</strong>
 					<p></p>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<strong class="number-day">15</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">16</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">17</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">18</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">19</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">20</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">21</strong>
 					<p></p>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<strong class="number-day">22</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">23</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">24</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">25</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">26</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">27</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">28</strong>
 					<p></p>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<strong class="number-day">29</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">30</strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day">31</strong>
 					<p></p>
 				</td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
-			<tr>
+			<tr id="extra-dates" style="display: none">
 				<td>
-					<strong class="number-day"></strong>
 					<p></p>
 				</td>
 				<td>
-					<strong class="number-day"></strong>
 					<p></p>
 				</td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
-				<td><strong class="number-day"></strong></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 		</tbody>
 	</table>
