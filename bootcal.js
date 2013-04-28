@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'];
+ var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+		'July', 'August', 'September', 'October', 'November', 'December'];
 
 		function daysInMonth(month, year) {
 			return new Date(year, month + 1, 0).getDate();
@@ -26,6 +26,7 @@ $(document).ready(function() {
 			var day = today.getDay();
 			var month = today.getMonth();
 			var year = today.getFullYear();
+			console.log(day);
 			/* this variable allows us to start our date grid on the proper day
 			since Sunday is 0 and our calendar starts on Monday, we add 1 to the date 
 			(taken care of via the for statement below) and since eq() elements are 0 based, 
@@ -65,9 +66,18 @@ $(document).ready(function() {
 			$("button#last").data("last", lastDate);
 			$("button#next").data("next", nextDate);
 			// loop to set the days on the grid
-			$("td .number-day").text('');
+			$("td .number-day").remove();
 			for (i = 1; i <= daysinmonth; i++) {
-				$("td .number-day").eq(i + offset).text(i);
+				$("#schedule tbody td").eq(i + offset).append('<strong class="number-day">' + i + '</strong>');
+				if (day == 6 && daysinmonth > 29) {
+					$("#extra-dates").show();
+				}
+				else if (day == 5 && daysinmonth > 30) {
+					$("#extra-dates").show();
+				}
+				else {
+					$("#extra-dates").hide();
+				}
 			}
 		}
 		set_calendar();
